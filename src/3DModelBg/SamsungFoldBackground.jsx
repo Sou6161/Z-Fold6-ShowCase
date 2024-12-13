@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import { motion } from 'framer-motion';
 
 const SamsungFoldBackground = () => {
@@ -13,7 +13,7 @@ const SamsungFoldBackground = () => {
   return (
     <motion.div 
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1.5 }}
+      animate={{ opacity: 1.7 }}
       transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
       className="absolute inset-0 pointer-events-none overflow-hidden"
     >

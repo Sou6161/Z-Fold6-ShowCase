@@ -57,7 +57,7 @@ const ModelVideoUserScroll = () => {
       text-white overflow-hidden"
     >
       {/* Layered Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-[#1e40af]/20 via-[#6366f1]/10 to-[#8b5cf6]/20 mix-blend-overlay pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-to-tr from-[#1e40af]/20 via-[#6366f1]/3  0 to-[#8b5cf6]/20 mix-blend-overlay pointer-events-none"></div>
 
       {/* Quote Section */}
       <div
@@ -125,15 +125,18 @@ const ModelVideoUserScroll = () => {
             scale: isVideoActive ? 1 : 0.8,
           }}
           transition={{ duration: 1 }}
-          className="w-[100vw] h-[100vh] rounded-lg overflow-hidden object-cover shadow-2xl"
+          className="w-[100vw] h-[100vh] rounded- overflow-hidden object-cover shadow-2xl"
         >
           <video
             id="ScrollModel"
             ref={videoRef}
             src={ModelScrollVideo}
-            className="w-full h-full rounded-l object-cover"
+            className="w-full h-full rounded- object-cover"
             playsInline
             muted
+            autoPlay
+            loop
+            controls={false}
             style={{
               pointerEvents: isVideoActive ? "auto" : "none",
               opacity: isVideoActive ? 1 : 1,

@@ -4,6 +4,7 @@ import HeroModel from "../ModelImages/HeroSectionModelImage-Photoroom.png";
 import VideosSection from "../Components/VideosSection";
 import ModelVideoUserScroll from "../Components/ModelVideoUserScroll";
 import ColorModels from "../Components/ColorModels";
+import MidHeroSection from "../Components/MidHeroSection";
 
 const ModelSection = () => {
   return (
@@ -165,6 +166,7 @@ const ModelSection = () => {
       <VideosSection />
       <ModelVideoUserScroll/>
       <ColorModels/>
+      <MidHeroSection/>
     </>
   );
 };

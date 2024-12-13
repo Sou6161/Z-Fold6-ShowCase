@@ -83,3 +83,8 @@ body {
 .snap-start {
   scroll-snap-align: start;
 }
+
+video {
+  transform: translateZ(0);
+  will-change: transform;
+  }
