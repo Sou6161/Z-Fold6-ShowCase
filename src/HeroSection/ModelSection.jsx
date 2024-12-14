@@ -5,6 +5,7 @@ import VideosSection from "../Components/VideosSection";
 import ModelVideoUserScroll from "../Components/ModelVideoUserScroll";
 import ColorModels from "../Components/ColorModels";
 import MidHeroSection from "../Components/MidHeroSection";
+import ClickToSearch from "../Components/ClickToSearch";
 
 const ModelSection = () => {
   return (
@@ -167,6 +168,7 @@ const ModelSection = () => {
       <ModelVideoUserScroll/>
       <ColorModels/>
       <MidHeroSection/>
+      <ClickToSearch/>
     </>
   );
 };
