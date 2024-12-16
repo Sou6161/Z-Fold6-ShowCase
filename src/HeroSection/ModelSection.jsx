@@ -6,6 +6,7 @@ import ModelVideoUserScroll from "../Components/ModelVideoUserScroll";
 import ColorModels from "../Components/ColorModels";
 import MidHeroSection from "../Components/MidHeroSection";
 import ClickToSearch from "../Components/ClickToSearch";
+import NoteAssist from "../Components/NoteAssist";
 
 const ModelSection = () => {
   return (

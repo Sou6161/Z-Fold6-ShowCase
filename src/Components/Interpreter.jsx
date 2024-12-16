@@ -1,13 +1,10 @@
 import React, { useRef, useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import { gsap } from "gsap";
-import CircleToSearchVideo from "../Videos/CircleToSearchVideo.mp4";
-import NoteAssist from "./NoteAssist";
-import ClickToSearchBGAnim from "./ClickToSearchBGAnim";
-import PhotoAssist from "./PhotoAssist";
-import Interpreter from "./Interpreter";
+import InterpreterVideo from "../Videos/InterpreterVideo.mp4";
+import NoteAssistBGAnim from "./NoteAssistBGAnim"; // Assuming you want to reuse the background animation
+import InterpreterTechParticles from "./InterpreterTechParticles";
 
-const ClickToSearch = () => {
+const Interpreter = () => {
   const [isInView, setIsInView] = useState(false);
   const containerRef = useRef(null);
   const videoRef = useRef(null);
@@ -47,12 +44,12 @@ const ClickToSearch = () => {
       const ctx = gsap.context(() => {
         const tl = gsap.timeline({
           defaults: {
-            ease: "power3.out",
-            duration: 1,
+            ease: "power4.out",
+            duration: 1.2,
           },
         });
 
-        // Animate text elements from bottom to top with stagger
+        // Animate text elements from bottom to top with smooth stagger
         tl.fromTo(
           titleRef.current,
           {
@@ -78,7 +75,7 @@ const ClickToSearch = () => {
               y: 0,
               scale: 1,
             },
-            "-=0.6" // Overlap with previous animation
+            "-=0.7" // Overlap with previous animation
           )
           .fromTo(
             descriptionRef.current,
@@ -92,7 +89,7 @@ const ClickToSearch = () => {
               y: 0,
               scale: 1,
             },
-            "-=0.6" // Overlap with previous animation
+            "-=0.7" // Overlap with previous animation
           );
       }, containerRef);
 
@@ -110,7 +107,7 @@ const ClickToSearch = () => {
         // Entrance Animation Timeline
         const entranceTl = gsap.timeline({
           defaults: {
-            ease: "power3.out",
+            ease: "power4.out",
             duration: 1.5,
           },
         });
@@ -119,7 +116,7 @@ const ClickToSearch = () => {
           videoContainer,
           {
             opacity: 0,
-            x: 200, // Start 200px to the right
+            x: -200, // Start 200px to the left
             scale: 0.9,
           },
           {
@@ -170,50 +167,16 @@ const ClickToSearch = () => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full min-h-screen overflow-hidden 
-     items-center justify-center p-6 lg:p-12 
-      bg-gradient-to-br from-[#1A1A2E] via-[#16213E] to-[#0F3460]"
+      className="relative w-full min-h-scree overflow-hidden 
+      flex items-center justify-center p-6 lg:p-12"
     >
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 backdrop-blur-sm"></div>
 
       <div className="relative z-20 max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-        <div className="space-y-8 text-white">
-          <h1
-            ref={titleRef}
-            className="text-6xl lg:text-7xl font-black tracking-tight 
-            bg-clip-text text-transparent 
-            bg-gradient-to-r from-cyan-300 via-blue-500 to-indigo-500
-            background-animate"
-          >
-            CIRCLE TO SEARCH
-          </h1>
-
-          <h2
-            ref={subtitleRef}
-            className="text-4xl lg:text-5xl font-bold 
-            bg-gradient-to-r from-blue-400 to-purple-600 
-            bg-clip-text text-transparent
-            drop-shadow-2xl"
-          >
-            Reimagine Mobile Interaction
-          </h2>
-
-          <p
-            ref={descriptionRef}
-            className="text-xl text-white/90 max-w-xl leading-relaxed 
-            bg-white/10 p-6 rounded-3xl border border-white/20 
-            backdrop-blur-lg shadow-2xl"
-          >
-            Transform your smartphone experience with an intuitive circle
-            gesture. Effortlessly search across your massive fold-out screen
-            using just your finger or the S Pen — productivity reimagined.
-          </p>
-        </div>
-
-        <div className="relative group perspective-1000">
+        <div className="order-2 lg:order-1 relative group perspective-1000">
           <div
             className="absolute -inset-2 
-            bg-gradient-to-r from-[#6A11CB] via-[#2575FC] to-[#0F4C75]
+            bg-gradient-to-r from-[#11A1CB] via-[#2575FC] to-[#0F4FC7]
             rounded-[2.5rem] opacity-50 group-hover:opacity-75 
             transition-all duration-1000 animate-pulse blur-2xl"
           ></div>
@@ -229,23 +192,22 @@ const ClickToSearch = () => {
               muted
               autoPlay
               loop
-              className="w-full aspect-video object-cover 
+              className="w-full aspect-video object-cover
               transition-all duration-500 
               group-hover:scale-105 group-hover:brightness-110"
-              src={CircleToSearchVideo}
+              src={InterpreterVideo}
             ></video>
-            <h1></h1>
 
             {/* Futuristic video overlay */}
             <div className="absolute inset-0 pointer-events-none">
               <div
                 className="absolute top-0 left-0 right-0 h-1 
-                bg-gradient-to-r from-transparent via-cyan-500 to-transparent 
+                bg-gradient-to-r from-transparent via-blue-500 to-transparent 
                 animate-pulse"
               ></div>
               <div
                 className="absolute bottom-0 left-0 right-0 h-1 
-                bg-gradient-to-r from-transparent via-purple-500 to-transparent 
+                bg-gradient-to-r from-transparent via-cyan-500 to-transparent 
                 animate-pulse"
               ></div>
             </div>
@@ -254,24 +216,54 @@ const ClickToSearch = () => {
           {/* Floating tech elements */}
           <div
             className="absolute -top-10 -right-10 w-32 h-32 
-            bg-gradient-to-br from-cyan-400 to-blue-600 
+            bg-gradient-to-br from-blue-400 to-cyan-600 
             rounded-full blur-2xl opacity-30 animate-blob"
           ></div>
           <div
             className="absolute -bottom-10 -left-10 w-24 h-24 
-            bg-gradient-to-br from-purple-400 to-indigo-600 
+            bg-gradient-to-br from-cyan-400 to-blue-600 
             rounded-full blur-2xl opacity-30 animate-blob animation-delay-2000"
           ></div>
+        </div>
+
+        <div className="order-1 lg:order-2 space-y-8 text-white">
+          <h1
+            ref={titleRef}
+            className="text-6xl lg:text-7xl font-black tracking-tight 
+            bg-clip-text text-transparent 
+            bg-gradient-to-r from-blue-300 via-cyan-500 to-indigo-500
+            background-animate"
+          >
+            INTERPRETER
+          </h1>
+
+          <h2
+            ref={subtitleRef}
+            className="text-4xl lg:text-5xl font-bold 
+            bg-gradient-to-r from-cyan-400 to-blue-600 
+            bg-clip-text text-transparent
+            drop-shadow-2xl"
+          >
+            Your Ultimate Interpreter Experience
+          </h2>
+
+          <p
+            ref={descriptionRef}
+            className="text-xl text-white/90 max-w-xl leading-relaxed 
+            bg-white/10 p-6 rounded-3xl border border-white/20 
+            backdrop-blur-lg shadow-2xl"
+          >
+            Traveling and need to talk with the locals? Interpreter translates
+            on the spot whether you're expressing yourself, or listening to a
+            global conference in a foreign language or to a tour guide.
+          </p>
         </div>
       </div>
 
       {/* Floating tech particles */}
-      <ClickToSearchBGAnim />
-      <NoteAssist />
-      <PhotoAssist />
-      <Interpreter/>
+      <InterpreterTechParticles />
     </div>
   );
 };
 
-export default ClickToSearch;
+export default Interpreter;
