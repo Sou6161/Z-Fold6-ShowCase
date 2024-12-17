@@ -6,6 +6,7 @@ import NoteAssist from "./NoteAssist";
 import ClickToSearchBGAnim from "./ClickToSearchBGAnim";
 import PhotoAssist from "./PhotoAssist";
 import Interpreter from "./Interpreter";
+import LiveTranslate from "./LiveTranslate";
 
 const ClickToSearch = () => {
   const [isInView, setIsInView] = useState(false);
@@ -270,6 +271,7 @@ const ClickToSearch = () => {
       <NoteAssist />
       <PhotoAssist />
       <Interpreter/>
+      <LiveTranslate/>
     </div>
   );
 };
