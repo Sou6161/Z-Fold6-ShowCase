@@ -8,6 +8,8 @@ import MidHeroSection from "../Components/MidHeroSection";
 import ClickToSearch from "../Components/ClickToSearch";
 import NoteAssist from "../Components/NoteAssist";
 import DarkandDarkerVideo from "../Components/DarkandDarkerVideo";
+import MobileDetails from "../Components/MobileDetails";
+import CameraRealImages from "../Components/CameraRealImages";
 
 const ModelSection = () => {
   return (
@@ -172,6 +174,8 @@ const ModelSection = () => {
       <MidHeroSection />
       <ClickToSearch />
       <DarkandDarkerVideo />
+      <MobileDetails />
+      <CameraRealImages />
     </>
   );
 };
