@@ -19,7 +19,6 @@ const CameraRealImages = () => {
           start: "top 80%",
           end: "bottom 20%",
           toggleActions: "play none none reverse",
-          markers: "true",
         },
         y: 100,
         opacity: 0,
@@ -50,7 +49,7 @@ const CameraRealImages = () => {
   return (
     <div
       ref={containerRef}
-      className=" absolute min-h-screen w-full bg-gradient-to-br from-indigo-950 via-fuchsia-900 to-emerald-950"
+      className=" relative min-h-screen w-full bg-gradient-to-br from-indigo-950 via-cyan-900 to-emerald-950"
     >
       <div className="max-w-7xl mx-auto px-4 py-16 space-y-32">
         {/* First Section */}
@@ -208,11 +207,11 @@ const CameraRealImages = () => {
       </div>
 
       {/* Enhanced Floating Elements with new colors */}
-      <div className="fixed top-0 left-0 w-full h-full pointer-events-none">
+      {/* <div className="fixed top-0 left-0 w-full h-full pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-fuchsia-400/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-emerald-400/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute top-1/2 right-1/3 w-48 h-48 bg-indigo-400/10 rounded-full blur-3xl animate-pulse"></div>
-      </div>
+      </div> */}
     </div>
   );
 };

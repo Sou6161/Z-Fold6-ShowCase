@@ -10,6 +10,8 @@ import NoteAssist from "../Components/NoteAssist";
 import DarkandDarkerVideo from "../Components/DarkandDarkerVideo";
 import MobileDetails from "../Components/MobileDetails";
 import CameraRealImages from "../Components/CameraRealImages";
+import ModelHardwareImages from "../Components/ModelHardwareImages";
+import SwitchToGalaxy from "../Components/SwitchToGalaxy";
 
 const ModelSection = () => {
   return (
@@ -176,6 +178,8 @@ const ModelSection = () => {
       <DarkandDarkerVideo />
       <MobileDetails />
       <CameraRealImages />
+      <ModelHardwareImages />
+      <SwitchToGalaxy/>
     </>
   );
 };
