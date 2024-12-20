@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Anton&family=Bungee+Spice&family=Dancing+Script:wght@400..700&family=Lobster&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Anton&family=Bungee+Spice&family=Dancing+Script:wght@400..700&family=Lobster&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Questrial&family=Rajdhani:wght@300;400;500;600;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Anton&family=Bungee+Spice&family=Dancing+Script:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Lobster&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Questrial&family=Rajdhani:wght@300;400;500;600;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bungee+Spice&family=Dancing+Script:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Lobster&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Questrial&family=Rajdhani:wght@300;400;500;600;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bungee+Spice&family=Comfortaa:wght@300..700&family=Dancing+Script:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Lobster&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Questrial&family=Rajdhani:wght@300;400;500;600;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Akaya+Kanadaka&family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bungee+Spice&family=Comfortaa:wght@300..700&family=Dancing+Script:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Lobster&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Questrial&family=Rajdhani:wght@300;400;500;600;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Akaya+Kanadaka&family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bungee+Spice&family=Comfortaa:wght@300..700&family=Dancing+Script:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Lobster&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Questrial&family=Rajdhani:wght@300;400;500;600;700&family=Righteous&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Akaya+Kanadaka&family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bungee+Spice&family=Comfortaa:wght@300..700&family=Dancing+Script:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Lobster&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Questrial&family=Rajdhani:wght@300;400;500;600;700&family=Righteous&family=Russo+One&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Akaya+Kanadaka&family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bungee+Spice&family=Comfortaa:wght@300..700&family=Dancing+Script:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Francois+One&family=Lobster&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Questrial&family=Rajdhani:wght@300;400;500;600;700&family=Righteous&family=Russo+One&family=Silkscreen:wght@400;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -70,7 +80,6 @@ body {
   }
 }
 
-
 .video-container {
   height: 100vh;
   overflow: hidden;
@@ -87,10 +96,68 @@ body {
 video {
   transform: translateZ(0);
   will-change: transform;
-  }
+}
 
+/* Fonts */
 
+.lobster-regular {
+  font-family: "Lobster", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  /* DarkandDarker text shine effect */
+.rajdhani-semibold {
+  font-family: "Rajdhani", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.questrial-regular {
+  font-family: "Questrial", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  
+.exo-font1 {
+  font-family: "Exo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.arvo-bold {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.comfortaa-font2 {
+  font-family: "Comfortaa", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.acme-regular {
+  font-family: "Acme", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.righteous-regular {
+  font-family: "Righteous", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.russo-one-regular {
+  font-family: "Russo One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.francois-one-regular {
+  font-family: "Francois One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+

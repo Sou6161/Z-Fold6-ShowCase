@@ -85,7 +85,7 @@ const DarkandDarkerVideo = () => {
       />
 
       {/* Animated Text */}
-      <div className="absolute top-10 left-0 w-full flex flex-col items-center z-10">
+      <div className="absolute top-10 font-Exo left-0 w-full flex flex-col items-center z-10">
         <div className="flex space-x-4">
           <motion.h1
             animate={textAnimations[0]}
@@ -100,7 +100,7 @@ const DarkandDarkerVideo = () => {
           <motion.h1
             animate={textAnimations[1]}
             initial={{ y: 100, opacity: 0 }}
-            className="text-6xl font-extrabold 
+            className="text-6xl font-Exo font-extrabold 
             bg-gradient-to-r from-purple-600 via-green-500 to-cyan-500
             bg-clip-text text-transparent
             drop-shadow-[0_5px_10px_rgba(25,25,255,0.5)]"
@@ -110,7 +110,7 @@ const DarkandDarkerVideo = () => {
           <motion.h1
             animate={textAnimations[2]}
             initial={{ y: 100, opacity: 0 }}
-            className="text-6xl font-extrabold 
+            className="text-6xl font-Exo font-extrabold 
             bg-gradient-to-r from-purple-600 via-green-500 to-cyan-500
             bg-clip-text text-transparent
             drop-shadow-[0_5px_10px_rgba(25,25,255,0.5)]"
@@ -131,7 +131,7 @@ const DarkandDarkerVideo = () => {
           className="container mx-auto px-4"
         >
           <div className="bg-black/50 rounded-xl p-4 max-w-md">
-            <p className="text-white text-lg italic">
+            <p className="text-white font-Rajdhani   text-lg italic">
               Embark on an epic journey through shadows and light
             </p>
           </div>

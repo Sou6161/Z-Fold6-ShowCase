@@ -12,6 +12,8 @@ import MobileDetails from "../Components/MobileDetails";
 import CameraRealImages from "../Components/CameraRealImages";
 import ModelHardwareImages from "../Components/ModelHardwareImages";
 import SwitchToGalaxy from "../Components/SwitchToGalaxy";
+import FrequentlyAskQues from "../Components/FrequentlyAskQues";
+import Footer from "../Components/Footer";
 
 const ModelSection = () => {
   return (
@@ -28,7 +30,7 @@ const ModelSection = () => {
           {/* Text content */}
           <div className="lg:w-1/2 text-white space-y-8 z-10">
             <motion.div
-              className="inline-block bg-gradient-to-r from-purple-500 to-blue-500 rounded-full px-4 py-1 text-sm"
+              className="inline-block font-Exo bg-gradient-to-r from-purple-500 to-blue-500 rounded-full px-4 py-1 text-sm"
               initial={{ opacity: 0, x: -300 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
@@ -37,7 +39,7 @@ const ModelSection = () => {
             </motion.div>
 
             <motion.h1
-              className="text-6xl lg:text-7xl font-bold font-['Exo_2'] leading-tight"
+              className="text-6xl lg:text-7xl font-bold font-Rajdhani leading-tight"
               initial={{ opacity: 0, x: -300 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
@@ -50,7 +52,7 @@ const ModelSection = () => {
             </motion.h1>
 
             <motion.div
-              className="flex items-center gap-4"
+              className="flex items-center gap-4 font-Questrial"
               initial={{ opacity: 0, x: -300 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 1.1, ease: "easeOut" }}
@@ -65,7 +67,7 @@ const ModelSection = () => {
             </motion.div>
 
             <motion.button
-              className="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 transform hover:scale-105"
+              className="bg-gradient-to-r font-Exo from-purple-500 to-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 transform hover:scale-105"
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.4, ease: "easeOut" }}
@@ -111,13 +113,13 @@ const ModelSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="relative left-[20vw] top-[10vh] inline-flex items-center gap-3 text-3xl md:text-4xl font-bold"
+            className="relative left-[22vw] top-[10vh] inline-flex items-center gap-3 text-3xl md:text-4xl font-bold"
           >
             <motion.span
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="bg-gradient-to-r from-red-400 via-purple-400 to-blue-400 text-transparent bg-clip-text"
+              className="bg-gradient-to-r font-Rajdhani from-red-400 via-purple-400 to-blue-400 text-transparent bg-clip-text"
             >
               Galaxy AI
             </motion.span>
@@ -140,7 +142,7 @@ const ModelSection = () => {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.7, duration: 0.6 }}
-              className="bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text"
+              className="bg-gradient-to-r font-Rajdhani from-blue-400 to-purple-400 text-transparent bg-clip-text"
             >
               is here
             </motion.span>
@@ -151,7 +153,7 @@ const ModelSection = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.8 }}
-            className="relative top-20 mt-8 max-w-2xl mx-auto text-lg text-center bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 text-transparent bg-clip-text leading-relaxed"
+            className="relative font-Exo top-20 mt-8 max-w-2xl mx-auto text-lg text-center bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 text-transparent bg-clip-text leading-relaxed"
           >
             Put <span className="font-semibold">PC-like power</span> in your
             pocket with
@@ -179,7 +181,9 @@ const ModelSection = () => {
       <MobileDetails />
       <CameraRealImages />
       <ModelHardwareImages />
-      <SwitchToGalaxy/>
+      <SwitchToGalaxy />
+      <FrequentlyAskQues />
+      <Footer />
     </>
   );
 };

@@ -85,12 +85,12 @@ const MobileDetails = () => {
           className="text-center space-y-6 animate-section"
         >
           <AnimatedText delay={0.2}>
-            <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-amber-400">
+            <h1 className="text-4xl font-francois md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-amber-400">
               Our Most Immersive Smartphone Gaming
             </h1>
           </AnimatedText>
           <AnimatedText delay={0.4}>
-            <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-300">
+            <p className="text-lg font-Questrial md:text-xl max-w-3xl mx-auto text-gray-300">
               Fold open a mobile gaming beast with a massive screen made better
               with the Vision Booster's powerful brightness and clarity even in
               broad daylight.
@@ -105,7 +105,7 @@ const MobileDetails = () => {
               title: "2600 nits",
               subtitle: "Screen Brightness",
               icon: "✨",
-              gradient: "from-[#8E2DE2] via-[#4A00E0] to-[#2196F3]",
+              gradient: "from-[#8E2DE2]  via-[#4A00E0] to-[#2196F3]",
               description:
                 "Ultra-bright display that cuts through sunlight with unprecedented clarity",
             },
@@ -121,7 +121,7 @@ const MobileDetails = () => {
               title: "Snapdragon®",
               subtitle: "8 Gen 3",
               icon: "🚀",
-              gradient: "from-[#11998e] via-[#38ef7d] to-[#5D4157]",
+              gradient: "from-[#11998e] via-red-500 to-[#5D4157]",
               description:
                 "Cutting-edge processor delivering unparalleled performance",
             },
@@ -157,13 +157,13 @@ const MobileDetails = () => {
               <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
               <div className="relative z-10 text-white">
                 <div className="text-4xl md:text-5xl mb-4 opacity-80">{item.icon}</div>
-                <h2 className="text-3xl md:text-4xl font-extrabold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70">
+                <h2 className="text-3xl  md:text-4xl font-extrabold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70">
                   {item.title}
                 </h2>
-                <p className="text-lg md:text-xl font-medium mb-4 opacity-90">
+                <p className="text-lg font-righteous md:text-xl font-medium mb-4 opacity-90">
                   {item.subtitle}
                 </p>
-                <p className="text-sm opacity-70 italic">{item.description}</p>
+                <p className="text-sm font-arvobold opacity-70 italic">{item.description}</p>
               </div>
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-white/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </motion.div>
@@ -174,18 +174,18 @@ const MobileDetails = () => {
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 animate-section">
           <div className="flex-1 space-y-6 w-full">
             <AnimatedText>
-              <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+              <h2 className="text-3xl font-Russo md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
                 Powerful Gaming Performance
               </h2>
             </AnimatedText>
             <AnimatedText delay={0.3}>
-              <p className="text-lg md:text-xl text-gray-300">
+              <p className="text-lg font-Questrial md:text-xl text-gray-300">
                 Enjoy silky-smooth gaming with Vulkan, even in AAA games.
                 Snapdragon® 8 Gen 3 for Galaxy renders graphics that are
                 absolutely fire.
               </p>
             </AnimatedText>
-            <div className="grid grid-cols-3 gap-2 md:gap-4">
+            <div className="grid grid-cols-3 gap-2 md:gap-4 font-Acme">
               {[
                 { title: "GPU", value: "19%", subtitle: "Faster Graphics" },
                 { title: "NPU", value: "42%", subtitle: "AI Performance" },
@@ -221,17 +221,17 @@ const MobileDetails = () => {
         {/* Battery Section */}
         <div className="text-center space-y-6 animate-section">
           <AnimatedText>
-            <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
+            <h2 className="text-3xl font-Russo md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
               Game Harder. Game Longer.
             </h2>
           </AnimatedText>
           <AnimatedText delay={0.3}>
-            <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-300">
+            <p className="text-lg font-Questrial md:text-xl max-w-3xl mx-auto text-gray-300">
               Our battery ensures all-day enjoyment. It's not just a massive
               battery, but also leverages a more efficient display.
             </p>
           </AnimatedText>
-          <div className="flex flex-wrap justify-center gap-4 md:gap-12">
+          <div className="flex font-Acme flex-wrap justify-center gap-4 md:gap-12">
             {[
               { icon: "🎵", title: "Music", duration: "77 hrs" },
               { icon: "🎬", title: "Videos", duration: "23 hrs" },

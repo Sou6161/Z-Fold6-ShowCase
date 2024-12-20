@@ -120,7 +120,7 @@ const VideosSection = () => {
                 <p className="text-sm text-white/60 uppercase tracking-wider">
                   Feature {index + 1}
                 </p>
-                <h2 className="text-3xl font-bold text-white">
+                <h2 className="text-3xl font-Questrial font-bold text-white">
                   {VideosHeading[index]}
                 </h2>
               </div>

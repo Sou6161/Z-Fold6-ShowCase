@@ -70,14 +70,14 @@ const ModelVideoUserScroll = () => {
           className="text-center mb-8 px-4"
         >
           <motion.h1
-            className="text-3xl md:text-5xl font-bold mb-2 tracking-tight text-white"
+            className="text-3xl font-arvobold  md:text-5xl font-bold mb-2 tracking-tight text-white"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            "Truly replicates a traditional phone
+            " Truly replicates a traditional phone
             <br />
-            while doubling as a sleek tablet"
+            while doubling as a sleek tablet "
           </motion.h1>
           <motion.span
             className="text-xl md:text-2xl font-light text-gray-300 italic"
@@ -96,12 +96,12 @@ const ModelVideoUserScroll = () => {
           className="text-center mt-8 px-4"
         >
           <motion.h1
-            className="text-3xl md:text-5xl font-bold mb-2 tracking-tight text-white"
+            className="text-3xl font-arvobold md:text-5xl font-bold mb-2 tracking-tight text-white"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-            "Simply the best big foldable phone"
+            " Simply the best big foldable phone "
           </motion.h1>
           <motion.span
             className="text-xl md:text-2xl font-light text-gray-300 italic"

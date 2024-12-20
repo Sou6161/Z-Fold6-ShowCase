@@ -218,7 +218,7 @@ const PhotoAssist = () => {
         <div className="space-y-8 text-white">
           <h1
             ref={titleRef}
-            className="text-6xl lg:text-7xl font-black tracking-tight 
+            className="text-6xl font-righteous lg:text-7xl font-black tracking-tight 
             bg-clip-text text-transparent 
             bg-gradient-to-r from-rose-300 via-pink-500 to-fuchsia-500
             background-animate"
@@ -228,7 +228,7 @@ const PhotoAssist = () => {
 
           <h2
             ref={subtitleRef}
-            className="text-4xl lg:text-5xl font-bold 
+            className="text-4xl font-Rajdhani lg:text-5xl font-bold 
             bg-gradient-to-r from-pink-400 to-purple-600 
             bg-clip-text text-transparent
             drop-shadow-2xl"
@@ -238,7 +238,7 @@ const PhotoAssist = () => {
 
           <p
             ref={descriptionRef}
-            className="text-xl text-white/90 max-w-xl leading-relaxed 
+            className="text-xl font-Questrial text-white/90 max-w-xl leading-relaxed 
             bg-white/10 p-6 rounded-3xl border border-white/20 
             backdrop-blur-lg shadow-2xl"
           >
