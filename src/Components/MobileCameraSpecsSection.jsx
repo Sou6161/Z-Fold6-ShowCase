@@ -52,10 +52,10 @@ const MobileCameraSpecsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16 space-y-4"
         >
-          <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+          <h2 className="text-4xl font-lexend font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
             Turn Pro. ProVisual Engine
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl  font-Rajdhani text-gray-300 max-w-3xl mx-auto">
             Meet Fold's most powerful camera system yet. Topped with an upgraded
             NPU, mind-blowing specs and ProVisual Engine, it'll transform your
             multimedia experience.
@@ -85,12 +85,12 @@ const MobileCameraSpecsSection = () => {
                   className={`absolute ${spec.position} flex flex-col items-center`}
                 >
                   <div className="text-center">
-                    <h3 className={`text-2xl font-bold ${spec.textColor}`}>
+                    <h3 className={`text-2xl font-Acme font-bold ${spec.textColor}`}>
                       {spec.mp}
                     </h3>
-                    <p className={`text-sm ${spec.labelColor}`}>{spec.label}</p>
+                    <p className={`text-sm font-arvobold ${spec.labelColor}`}>{spec.label}</p>
                     {spec.subtext && (
-                      <p className="text-xs text-gray-500">{spec.subtext}</p>
+                      <p className="text-xs font-arvobold text-gray-500">{spec.subtext}</p>
                     )}
                   </div>
                 </motion.div>

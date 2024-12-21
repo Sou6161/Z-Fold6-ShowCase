@@ -65,7 +65,7 @@ const MidHeroSection = () => {
           <motion.span
             ref={galaxyAiRef}
             initial={{ opacity: 0, y: 50, scale: 0.9 }}
-            className="text-9xl font-Acme font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500"
+            className="text-8xl font-Acme font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500"
           >
             Galaxy AI
           </motion.span>
@@ -84,7 +84,7 @@ const MidHeroSection = () => {
           <motion.h2
             ref={revolutionizingFoldablesRef}
             initial={{ opacity: 0, y: 50, scale: 0.9 }}
-            className="text-7xl font-Acme font-bold  tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-300 drop-shadow-2xl"
+            className="text-6xl font-Acme font-bold  tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-300 drop-shadow-2xl"
           >
             Revolutionizing Foldables
           </motion.h2>
@@ -92,7 +92,7 @@ const MidHeroSection = () => {
           <motion.p
             ref={cuttingEdgeAITechnologyRef}
             initial={{ opacity: 0, y: 50, scale: 0.9 }}
-            className="mt-6 font-Acme text-2xl font-light text-gray-300 max-w-3xl mx-auto"
+            className="mt-6 font-Acme text-xl font-light text-gray-300 max-w-3xl mx-auto"
           >
             Cutting-edge AI technology meets innovative design, transforming the
             way you interact with mobile devices

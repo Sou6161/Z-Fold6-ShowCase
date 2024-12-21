@@ -61,7 +61,7 @@ const SwitchToGalaxy = () => {
         animate="animate"
         className="relative pt-16 pb-8 px-4 sm:px-6 lg:px-8"
       >
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-8">
+        <h1 className="text-4xl font-Rajdhani md:text-5xl lg:text-6xl font-bold text-center mb-8">
           <span className="inline-block bg-gradient-to-r from-blue-400 via-white to-blue-400 bg-clip-text text-transparent">
             Why switch to the Galaxy
           </span>
@@ -115,10 +115,10 @@ const SwitchToGalaxy = () => {
                   </div>
 
                   <div className="space-y-4">
-                    <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
+                    <h2 className="text-2xl font-Exo md:text-3xl font-bold bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
                       {feature.title}
                     </h2>
-                    <p className="text-base md:text-lg text-gray-300">
+                    <p className="text-base font-comfortaa md:text-lg text-gray-300">
                       {feature.description}
                     </p>
                   </div>
@@ -139,10 +139,10 @@ const SwitchToGalaxy = () => {
         </div>
         
         <div className="relative z-10 h-full flex flex-col items-center justify-center space-y-8">
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-white bg-clip-text text-transparent">
+          <h1 className="text-5xl font-Questrial md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-white bg-clip-text text-transparent">
             Accessories
           </h1>
-          <button className="px-8 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full text-white font-medium transition-all duration-300 border border-white/20 hover:border-white/30">
+          <button className="px-8 py-3 font-Exo bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full text-white font-medium transition-all duration-300 border border-white/20 hover:border-white/30">
             Explore more
           </button>
         </div>

@@ -93,12 +93,12 @@ const FAQItem = ({ question, answer, isOpen, onClick, index }) => {
       initial={false}
     >
       <motion.button
-        className="w-full py-6 px-6 flex justify-between items-center bg-white hover:bg-blue-50 transition-all duration-300 group"
+        className="w-full py-6 px-6 flex justify-between items-center bg-slate-400 hover:bg-blue-50 transition-all duration-300 group"
         onClick={onClick}
         whileHover={{ scale: 1.005 }}
         whileTap={{ scale: 0.995 }}
       >
-        <span className="text-lg font-medium text-left text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+        <span className="text-lg font-semibold font-Rajdhani text-left text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
           {question}
         </span>
         <motion.div
@@ -226,7 +226,7 @@ const FrequentlyAskQuestions = () => {
   return (
     <div
       ref={containerRef}
-      className="max-w-full mx-auto py-16 px-4 min-h-screen bg-gradient-to-br from-gray-700 via-gray-700 to-gray-700"
+      className="  relative max-w-full mx-auto py-16 px-4 min-h-screen bg-gradient-to-b from-gray-900 to-black"
     >
       <motion.div
         initial="hidden"
@@ -235,7 +235,7 @@ const FrequentlyAskQuestions = () => {
       >
         <h1
           ref={titleRef}
-          className="text-4xl font-bold text-center mb-4 text-green-500 opacity-0"
+          className="text-4xl font-bold text-center mb-4 text-yellow-500 opacity-0"
         >
           Frequently Asked Questions
         </h1>
@@ -249,7 +249,7 @@ const FrequentlyAskQuestions = () => {
 
         <div
           ref={cardRef}
-          className="bg-white w-[50vw] mx-auto rounded-2xl shadow-xl overflow-hidden border border-blue-100 opacity-0"
+          className="bg-white w-[60vw] mx-auto rounded-2xl shadow-xl overflow-hidden border border-blue-100 opacity-0"
         >
           {FAQ_DATA.map((faq, index) => (
             <FAQItem

@@ -20,7 +20,7 @@ const DarkandDarkerVideo = () => {
         }
       },
       { 
-        threshold: 0.1 // Trigger when at least 10% of the component is visible
+        threshold: 0.3 // Increased threshold for smoother trigger
       }
     );
 
@@ -36,41 +36,40 @@ const DarkandDarkerVideo = () => {
   }, []);
 
   const animateTextSequence = async () => {
-    // First word "GET"
-    await textAnimations[0].start({
-      y: [100, 0],
+    const baseAnimation = {
       opacity: [0, 1],
-      transition: { 
-        duration: 0.5, 
-        ease: "easeOut" 
+      scale: [0.9, 1],
+      rotateX: [45, 0],
+      transition: {
+        duration: 0.8,
+        ease: [0.645, 0.045, 0.355, 1], // Cubic bezier for smooth easing
       }
-    });
+    };
 
-    // Pause briefly
-    await new Promise(resolve => setTimeout(resolve, 500));
-
-    // Second word "FULLY"
-    await textAnimations[1].start({
-      y: [100, 0],
-      opacity: [0, 1],
-      transition: { 
-        duration: 0.5, 
-        ease: "easeOut" 
-      }
-    });
-
-    // Pause briefly
-    await new Promise(resolve => setTimeout(resolve, 500));
-
-    // Third word "IMMERSED"
-    await textAnimations[2].start({
-      y: [100, 0],
-      opacity: [0, 1],
-      transition: { 
-        duration: 0.5, 
-        ease: "easeOut" 
-      }
-    });
+    // Animate words with stagger
+    await Promise.all([
+      textAnimations[0].start({
+        ...baseAnimation,
+        transition: {
+          ...baseAnimation.transition,
+          delay: 0.2
+        }
+      }),
+      textAnimations[1].start({
+        ...baseAnimation,
+        transition: {
+          ...baseAnimation.transition,
+          delay: 0.4
+        }
+      }),
+      textAnimations[2].start({
+        ...baseAnimation,
+        transition: {
+          ...baseAnimation.transition,
+          delay: 0.6
+        }
+      })
+    ]);
   };
 
   return (
@@ -80,6 +79,7 @@ const DarkandDarkerVideo = () => {
         playsInline
         autoPlay
         muted
+        loop
         className="absolute top-0 left-0 w-full h-full object-cover"
         src={DarkAndDarkerFullVideo}
       />
@@ -87,51 +87,44 @@ const DarkandDarkerVideo = () => {
       {/* Animated Text */}
       <div className="absolute top-10 font-Exo left-0 w-full flex flex-col items-center z-10">
         <div className="flex space-x-4">
-          <motion.h1
-            animate={textAnimations[0]}
-            initial={{ y: 100, opacity: 0 }}
-            className="text-6xl font-extrabold 
-            bg-gradient-to-r from-purple-600 via-green-500 to-cyan-500
-            bg-clip-text text-transparent
-            drop-shadow-[0_5px_10px_rgba(25,25,255,0.5)]"
-          >
-            GET
-          </motion.h1>
-          <motion.h1
-            animate={textAnimations[1]}
-            initial={{ y: 100, opacity: 0 }}
-            className="text-6xl font-Exo font-extrabold 
-            bg-gradient-to-r from-purple-600 via-green-500 to-cyan-500
-            bg-clip-text text-transparent
-            drop-shadow-[0_5px_10px_rgba(25,25,255,0.5)]"
-          >
-            FULLY
-          </motion.h1>
-          <motion.h1
-            animate={textAnimations[2]}
-            initial={{ y: 100, opacity: 0 }}
-            className="text-6xl font-Exo font-extrabold 
-            bg-gradient-to-r from-purple-600 via-green-500 to-cyan-500
-            bg-clip-text text-transparent
-            drop-shadow-[0_5px_10px_rgba(25,25,255,0.5)]"
-          >
-            IMMERSED
-          </motion.h1>
+          {[
+            { text: "GET", delay: 0 },
+            { text: "FULLY", delay: 0.2 },
+            { text: "IMMERSED", delay: 0.4 }
+          ].map((word, index) => (
+            <motion.h1
+              key={word.text}
+              animate={textAnimations[index]}
+              initial={{ opacity: 0, scale: 0.9, rotateX: 45 }}
+              className="text-6xl font-extrabold 
+                bg-gradient-to-r from-purple-600 via-green-500 to-cyan-500
+                bg-clip-text text-transparent
+                drop-shadow-[0_5px_10px_rgba(25,25,255,0.5)]
+                transform-gpu" // Added for better performance
+            >
+              {word.text}
+            </motion.h1>
+          ))}
         </div>
       </div>
 
       {/* Additional Dynamic Elements */}
       <div className="absolute bottom-10 left-0 w-full">
         <motion.div
-          initial={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{
-            opacity: 1,
-            x: 0,
+            opacity: isInView ? 1 : 0,
+            y: isInView ? 0 : 20,
+          }}
+          transition={{
+            duration: 0.8,
+            delay: 0.8,
+            ease: [0.645, 0.045, 0.355, 1]
           }}
           className="container mx-auto px-4"
         >
           <div className="bg-black/50 rounded-xl p-4 max-w-md">
-            <p className="text-white font-Rajdhani   text-lg italic">
+            <p className="text-white font-Rajdhani text-lg italic">
               Embark on an epic journey through shadows and light
             </p>
           </div>

@@ -1,4 +1,4 @@
-import { AlarmClockMinus } from 'lucide-react';
+import { AlarmClockMinus } from "lucide-react";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -35,12 +35,14 @@ export default {
         Rajdhani: ["Rajdhani", "serif"],
         Questrial: ["Questrial", "serif"],
         Exo: ["Exo", "serif"],
-		arvobold:["Arvo", "serif"],
-		comfortaa:["Comfortaa", "serif"],
-		Acme:["Acme", "serif"],
-		righteous:["Righteous", "serif"],
-		Russo:["Russo One", "serif"],
-		francois:["Francois One", "serif"]
+        arvobold: ["Arvo", "serif"],
+        comfortaa: ["Comfortaa", "serif"],
+        Acme: ["Acme", "serif"],
+        righteous: ["Righteous", "serif"],
+        Russo: ["Russo One", "serif"],
+        francois: ["Francois One", "serif"],
+        lexend: ["Lexend", "serif"],
+        chakra:["Chakra Petch", "serif"]
       },
     },
   },

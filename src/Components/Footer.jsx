@@ -1,29 +1,29 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { 
-  Facebook, 
-  Twitter, 
-  Instagram, 
-  Youtube, 
-  Mail, 
-  Phone, 
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Youtube,
+  Mail,
+  Phone,
   MapPin,
   ChevronRight,
   Smartphone,
   Shield,
   CreditCard,
-  Headphones
-} from 'lucide-react';
+  Headphones,
+} from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-b from-gray-900 to-black text-white">
+    <footer className=" relative bg-gradient-to-b from-gray-900 to-black text-white">
       {/* Pre-Footer Highlights */}
       <div className="border-b border-gray-800">
         <div className="max-w-7xl mx-auto py-12 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <motion.div 
+          <motion.div
             className="flex items-center gap-4"
             whileHover={{ scale: 1.02 }}
           >
@@ -33,8 +33,8 @@ const Footer = () => {
               <p className="text-sm text-gray-400">Pre-order now</p>
             </div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             className="flex items-center gap-4"
             whileHover={{ scale: 1.02 }}
           >
@@ -44,8 +44,8 @@ const Footer = () => {
               <p className="text-sm text-gray-400">Protection plan</p>
             </div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             className="flex items-center gap-4"
             whileHover={{ scale: 1.02 }}
           >
@@ -55,8 +55,8 @@ const Footer = () => {
               <p className="text-sm text-gray-400">0% financing available</p>
             </div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             className="flex items-center gap-4"
             whileHover={{ scale: 1.02 }}
           >
@@ -76,28 +76,28 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Galaxy Z Fold6</h3>
             <ul className="space-y-4">
-              <motion.li 
+              <motion.li
                 className="flex items-center gap-2 text-gray-400 hover:text-blue-500 cursor-pointer"
                 whileHover={{ x: 5 }}
               >
                 <ChevronRight className="w-4 h-4" />
                 <span>Specifications</span>
               </motion.li>
-              <motion.li 
+              <motion.li
                 className="flex items-center gap-2 text-gray-400 hover:text-blue-500 cursor-pointer"
                 whileHover={{ x: 5 }}
               >
                 <ChevronRight className="w-4 h-4" />
                 <span>Compare Models</span>
               </motion.li>
-              <motion.li 
+              <motion.li
                 className="flex items-center gap-2 text-gray-400 hover:text-blue-500 cursor-pointer"
                 whileHover={{ x: 5 }}
               >
                 <ChevronRight className="w-4 h-4" />
                 <span>Galaxy AI Features</span>
               </motion.li>
-              <motion.li 
+              <motion.li
                 className="flex items-center gap-2 text-gray-400 hover:text-blue-500 cursor-pointer"
                 whileHover={{ x: 5 }}
               >
@@ -111,28 +111,28 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Support</h3>
             <ul className="space-y-4">
-              <motion.li 
+              <motion.li
                 className="flex items-center gap-2 text-gray-400 hover:text-blue-500 cursor-pointer"
                 whileHover={{ x: 5 }}
               >
                 <ChevronRight className="w-4 h-4" />
                 <span>Contact Us</span>
               </motion.li>
-              <motion.li 
+              <motion.li
                 className="flex items-center gap-2 text-gray-400 hover:text-blue-500 cursor-pointer"
                 whileHover={{ x: 5 }}
               >
                 <ChevronRight className="w-4 h-4" />
                 <span>Service Locations</span>
               </motion.li>
-              <motion.li 
+              <motion.li
                 className="flex items-center gap-2 text-gray-400 hover:text-blue-500 cursor-pointer"
                 whileHover={{ x: 5 }}
               >
                 <ChevronRight className="w-4 h-4" />
                 <span>Community</span>
               </motion.li>
-              <motion.li 
+              <motion.li
                 className="flex items-center gap-2 text-gray-400 hover:text-blue-500 cursor-pointer"
                 whileHover={{ x: 5 }}
               >
@@ -164,14 +164,16 @@ const Footer = () => {
           {/* Newsletter */}
           <div>
             <h3 className="text-lg font-semibold mb-6">Stay Updated</h3>
-            <p className="text-gray-400 mb-4">Subscribe for Galaxy Z Fold6 news and exclusive offers</p>
+            <p className="text-gray-400 mb-4">
+              Subscribe for Galaxy Z Fold6 news and exclusive offers
+            </p>
             <div className="space-y-4">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
+              <input
+                type="email"
+                placeholder="Enter your email"
                 className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white"
               />
-              <motion.button 
+              <motion.button
                 className="w-full px-4 py-2 bg-blue-600 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -186,38 +188,39 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex gap-6">
-              <motion.a 
-                href="#" 
+              <motion.a
+                href="#"
                 whileHover={{ scale: 1.1, color: "#1DA1F2" }}
                 className="text-gray-400 hover:text-white"
               >
                 <Twitter className="w-6 h-6" />
               </motion.a>
-              <motion.a 
-                href="#" 
+              <motion.a
+                href="#"
                 whileHover={{ scale: 1.1, color: "#4267B2" }}
                 className="text-gray-400 hover:text-white"
               >
                 <Facebook className="w-6 h-6" />
               </motion.a>
-              <motion.a 
-                href="#" 
+              <motion.a
+                href="#"
                 whileHover={{ scale: 1.1, color: "#E1306C" }}
                 className="text-gray-400 hover:text-white"
               >
                 <Instagram className="w-6 h-6" />
               </motion.a>
-              <motion.a 
-                href="#" 
+              <motion.a
+                href="#"
                 whileHover={{ scale: 1.1, color: "#FF0000" }}
                 className="text-gray-400 hover:text-white"
               >
                 <Youtube className="w-6 h-6" />
               </motion.a>
             </div>
-            
+
             <div className="text-gray-400 text-sm">
-              © {currentYear} Samsung. All rights reserved. | Privacy Policy | Terms of Use
+              © {currentYear} Samsung. All rights reserved. | Privacy Policy |
+              Terms of Use
             </div>
           </div>
         </div>
