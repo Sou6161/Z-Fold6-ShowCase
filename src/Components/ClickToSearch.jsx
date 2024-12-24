@@ -171,17 +171,17 @@ const ClickToSearch = () => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full min-h-screen overflow-hidden 
+      className="relative w-full min-h-screen  overflow-hidden
      items-center justify-center p-6 lg:p-12 
       bg-gradient-to-br from-[#1A1A2E] via-[#16213E] to-[#0F3460]"
     >
       <div className="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>
 
-      <div className="relative z-20 max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <div className="relative z-20 max-w-6xl sm:mt-10 mx-auto grid lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8 text-white">
           <h1
             ref={titleRef}
-            className="text-6xl font-righteous lg:text-7xl font-black tracking-tight 
+            className="text-5xl 2xl:text-6xl font-righteous lg:text-7xl font-black tracking-tight 
             bg-clip-text text-transparent 
             bg-gradient-to-r from-cyan-300 via-blue-500 to-indigo-500
             background-animate"
@@ -191,7 +191,7 @@ const ClickToSearch = () => {
 
           <h2
             ref={subtitleRef}
-            className="text-4xl font-Rajdhani lg:text-5xl font-bold 
+            className="text-3xl 2xl:text-4xl font-Rajdhani lg:text-5xl font-bold 
             bg-gradient-to-r from-blue-400 to-purple-600 
             bg-clip-text text-transparent
             drop-shadow-2xl"
@@ -201,7 +201,7 @@ const ClickToSearch = () => {
 
           <p
             ref={descriptionRef}
-            className="text-xl font-Questrial text-white/90 max-w-xl leading-relaxed 
+            className="text-lg 2xl:text-xl font-Questrial text-white/90 max-w-xl leading-relaxed 
             bg-white/10 p-6 rounded-3xl border border-white/20 
             backdrop-blur-lg shadow-2xl"
           >

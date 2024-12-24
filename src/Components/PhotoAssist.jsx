@@ -155,7 +155,7 @@ const PhotoAssist = () => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full min-h-screen overflow-hidden 
+      className="relative w-full sm:mt-[5vh] min-h-screen
       items-center justify-center p-6 lg:p-12 
       "
     >
@@ -218,7 +218,7 @@ const PhotoAssist = () => {
         <div className="space-y-8 text-white">
           <h1
             ref={titleRef}
-            className="text-6xl font-righteous lg:text-7xl font-black tracking-tight 
+            className="text-5xl 2xl:text-6xl font-righteous lg:text-7xl font-black tracking-tight 
             bg-clip-text text-transparent 
             bg-gradient-to-r from-rose-300 via-pink-500 to-fuchsia-500
             background-animate"
@@ -228,7 +228,7 @@ const PhotoAssist = () => {
 
           <h2
             ref={subtitleRef}
-            className="text-4xl font-Rajdhani lg:text-5xl font-bold 
+            className="text-3xl 2xl:text-4xl font-Rajdhani lg:text-5xl font-bold 
             bg-gradient-to-r from-pink-400 to-purple-600 
             bg-clip-text text-transparent
             drop-shadow-2xl"
@@ -238,7 +238,7 @@ const PhotoAssist = () => {
 
           <p
             ref={descriptionRef}
-            className="text-xl font-Questrial text-white/90 max-w-xl leading-relaxed 
+            className="text-lg 2xl:text-xl font-Questrial text-white/90 max-w-xl leading-relaxed 
             bg-white/10 p-6 rounded-3xl border border-white/20 
             backdrop-blur-lg shadow-2xl"
           >

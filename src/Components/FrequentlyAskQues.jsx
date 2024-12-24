@@ -93,7 +93,7 @@ const FAQItem = ({ question, answer, isOpen, onClick, index }) => {
       initial={false}
     >
       <motion.button
-        className="w-full py-6 px-6 flex justify-between items-center bg-slate-400 hover:bg-blue-50 transition-all duration-300 group"
+        className="w-full py-6 px-6 flex justify-between items-center bg-slate-400 hover:bg-blue-5 transition-all duration-300 group"
         onClick={onClick}
         whileHover={{ scale: 1.005 }}
         whileTap={{ scale: 0.995 }}
@@ -249,7 +249,7 @@ const FrequentlyAskQuestions = () => {
 
         <div
           ref={cardRef}
-          className="bg-white w-[60vw] mx-auto rounded-2xl shadow-xl overflow-hidden border border-blue-100 opacity-0"
+          className="bg-white w-[90vw] 2xl:w-[60vw] mx-auto rounded-2xl shadow-xl overflow-hidden border border-blue-100 opacity-0"
         >
           {FAQ_DATA.map((faq, index) => (
             <FAQItem

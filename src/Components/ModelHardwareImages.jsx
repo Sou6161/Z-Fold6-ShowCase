@@ -60,7 +60,7 @@ const ModelHardwareImages = () => {
             <motion.span
               key={word}
               style={{ y: wordAnimations[index] }}
-              className="text-5xl font-lexend md:text-7xl font-bold bg-gradient-to-r from-blue-400 via-red-500 to-pink-500 bg-clip-text text-transparent"
+              className="text-4xl font-lexend md:text-7xl font-bold bg-gradient-to-r from-blue-400 via-red-500 to-pink-500 bg-clip-text text-transparent"
             >
               {word}
             </motion.span>
@@ -80,10 +80,10 @@ const ModelHardwareImages = () => {
           >
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-8">
-                <h2 className="text-4xl font-Russo md:text-5xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                <h2 className="text-3xl font-Russo md:text-5xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                   {features[activeIndex].title}
                 </h2>
-                <p className="text-xl font-arvobold text-gray-300 leading-relaxed">
+                <p className="text-lg font-arvobold text-gray-300 leading-relaxed">
                   {features[activeIndex].description}
                 </p>
               </div>
@@ -91,7 +91,7 @@ const ModelHardwareImages = () => {
                 <img
                   src={features[activeIndex].image}
                   alt={features[activeIndex].title}
-                  className="w-[40vw] h-[40vh] object-cover transition-transform duration-700 hover:scale-110"
+                  className="w-[80vw] 2xl:w-[40vw] h-[40vh] object-cover transition-transform duration-700 hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
               </div>

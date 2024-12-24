@@ -23,7 +23,7 @@ const ModelSection = () => {
       </div>
       
       {/* Hero Section */}
-      <div className="relative h-screen sm:h-[80vh] md:h-[70vh] lg:h-[57.6vh] bg-gradient-to-b from-gray-900 to-black overflow-hidden">
+      <div className="relative h-[82vh] sm:h-[95vh] md:h-[70vh] lg:h-[57.6vh] bg-gradient-to-b from-gray-900 to-black overflow-hidden">
         {/* Animated background elements */}
         <div className="absolute inset-0">
           <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-20 sm:w-32 h-20 sm:h-32 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
@@ -80,7 +80,7 @@ const ModelSection = () => {
 
           {/* Phone Image */}
           <motion.div
-            className=" w-full   sm:w-3/4 lg:w-1/2 mt-8 lg:mt-0 z-10"
+            className=" w-[110vw]   sm:w-3/4 lg:w-1/2 mt-8 lg:mt-0 z-10"
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -94,7 +94,7 @@ const ModelSection = () => {
             <img
               src={HeroModel}
               alt="Galaxy Z Fold 6"
-              className="w-full  brightness-110 contrast-125 2xl:w-full 2xl:max-w-2xl mx-auto drop-shadow-2xl"
+              className="w-full h-[50vh] -ml-5   brightness-110 contrast-125 2xl:w-full 2xl:max-w-2xl mx-auto drop-shadow-2xl"
             />
           </motion.div>
         </div>
@@ -104,7 +104,7 @@ const ModelSection = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="h-[50vh] -mt- sm:h-[60vh] md:h-[50vh] lg:h-[43vh] bg-gradient-to-b from-black to-gray-900 relative overflow-hidden">
+      <div className="h-[50vh]   sm:h-[60vh] md:h-[50vh] lg:h-[43vh] bg-gradient-to-b from-black to-gray-900 relative overflow-hidden">
         {/* Animated background effects */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-32 sm:w-64 h-32 sm:h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -117,7 +117,7 @@ const ModelSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="relative text-center mt-8 sm:mt-16 lg:mt-[10vh] inline-flex flex-col sm:flex-row items-center justify-center w-full gap-2 sm:gap-3 text-2xl sm:text-3xl md:text-4xl font-bold"
+            className="relative text-center mt-8 sm:mt-16  lg:mt-[10vh] inline-flex flex-col sm:flex-row items-center justify-center w-full gap-2 sm:gap-3 text-2xl sm:text-3xl md:text-4xl font-bold"
           >
             <motion.span
               initial={{ opacity: 0, x: -20 }}

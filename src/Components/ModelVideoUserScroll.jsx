@@ -70,7 +70,7 @@ const ModelVideoUserScroll = () => {
           className="text-center mb-8 px-4"
         >
           <motion.h1
-            className="text-3xl font-arvobold  md:text-5xl font-bold mb-2 tracking-tight text-white"
+            className="text-3xl font-Rajdhani  md:text-5xl font-bold mb-2 tracking-tight text-white"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -96,7 +96,7 @@ const ModelVideoUserScroll = () => {
           className="text-center mt-8 px-4"
         >
           <motion.h1
-            className="text-3xl font-arvobold md:text-5xl font-bold mb-2 tracking-tight text-white"
+            className="text-3xl font-Rajdhani md:text-5xl font-bold mb-2 tracking-tight text-white"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
@@ -117,7 +117,7 @@ const ModelVideoUserScroll = () => {
       {/* Video Section */}
       <div
         ref={videoContainerRef}
-        className="sticky top-0 h-screen flex items-center justify-center w-full z-20"
+        className="sticky top-0 h-screen w-full flex items-center justify-center z-20  sm:px- md:px-8"
       >
         <motion.div
           initial={{ scale: 0.8 }}
@@ -125,13 +125,13 @@ const ModelVideoUserScroll = () => {
             scale: isVideoActive ? 1 : 0.8,
           }}
           transition={{ duration: 1 }}
-          className="w-[100vw] h-[100vh] rounded- overflow-hidden object-cover shadow-2xl"
+          className="relative w-full max-w-full h-full  md:max-w-[80vw] lg:max-w-[70vw] xl:max-w-[60vw] aspect-video overflow-hidden shadow-2xl"
         >
           <video
             id="ScrollModel"
             ref={videoRef}
             src={ModelScrollVideo}
-            className="w-full h-full rounded- object-cover"
+            className="w-full h-full object-cover"
             playsInline
             muted
             autoPlay

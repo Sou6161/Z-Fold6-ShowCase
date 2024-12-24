@@ -171,15 +171,15 @@ const MobileDetails = () => {
         </div>
 
         {/* Gaming Performance */}
-        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 animate-section">
-          <div className="flex-1 space-y-6 w-full">
+        <div className="flex flex-col  2xl:ml-[25vw] md:flex-row items-center gap-6 md:gap-12 animate-section">
+          <div className="flex-1 space-y-6 w-full ">
             <AnimatedText>
-              <h2 className="text-3xl font-Russo md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+              <h2 className="text-3xl  2xl:text-nowrap  font-Russo md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
                 Powerful Gaming Performance
               </h2>
             </AnimatedText>
             <AnimatedText delay={0.3}>
-              <p className="text-lg font-Questrial md:text-xl text-gray-300">
+              <p className="text-lg font-Questrial text-center md:text-xl text-gray-300">
                 Enjoy silky-smooth gaming with Vulkan, even in AAA games.
                 Snapdragon® 8 Gen 3 for Galaxy renders graphics that are
                 absolutely fire.
@@ -213,7 +213,7 @@ const MobileDetails = () => {
             <img
               src="https://images.samsung.com/in/smartphones/galaxy-z-fold6/images/galaxy-z-fold6-features-snapdragon.jpg?imbypass=true"
               alt="Mobile Device"
-              className="w-[6vw] rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
+              className="w-[30vw] sm:w-[20vw] 2xl:w-[6vw] 2xl:mx-0 object-cover mx-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
             />
           </motion.div>
         </div>
