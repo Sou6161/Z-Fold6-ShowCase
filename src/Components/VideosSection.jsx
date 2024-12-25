@@ -84,7 +84,7 @@ const VideosSection = () => {
     <div
       ref={containerRef}
       className={`w-full h-screen bg-[#030712] ${
-        isInView ? "sticky top-0" : "relative"
+        isInView ? " relative top-0" : "relative"
       }`}
     >
       {/* Ambient background effects */}

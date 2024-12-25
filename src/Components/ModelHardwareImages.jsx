@@ -52,7 +52,7 @@ const ModelHardwareImages = () => {
   };
 
   return (
-    <div className="  relative w-full min-h-screen bg-gradient-to-b from-black via-gray-900 to-black">
+    <div className="  relative -top-[14vh] w-full min-h-screen bg-gradient-to-b from-black via-gray-900 to-black">
       {/* Hero Section with Scroll Animation */}
       <div className="text-center py-16 px-4  flex flex-col items-center justify-center">
         <div className="flex flex-wrap justify-center gap-4">
@@ -60,7 +60,7 @@ const ModelHardwareImages = () => {
             <motion.span
               key={word}
               style={{ y: wordAnimations[index] }}
-              className="text-4xl font-lexend md:text-7xl font-bold bg-gradient-to-r from-blue-400 via-red-500 to-pink-500 bg-clip-text text-transparent"
+              className="text-4xl font-lexend md:text-4xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-r from-blue-400 via-red-500 to-pink-500 bg-clip-text text-transparent"
             >
               {word}
             </motion.span>
@@ -80,14 +80,14 @@ const ModelHardwareImages = () => {
           >
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-8">
-                <h2 className="text-3xl font-Russo md:text-5xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                <h2 className="text-3xl font-Russo md:text-3xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                   {features[activeIndex].title}
                 </h2>
                 <p className="text-lg font-arvobold text-gray-300 leading-relaxed">
                   {features[activeIndex].description}
                 </p>
               </div>
-              <div className="relative h-72 md:h-[330px] overflow-hidden rounded-2xl">
+              <div className="relative h-72 md:h-[280px] overflow-hidden rounded-2xl">
                 <img
                   src={features[activeIndex].image}
                   alt={features[activeIndex].title}

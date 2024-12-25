@@ -52,7 +52,7 @@ const SwitchToGalaxy = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-black text-white overflow-hidden">
+    <div className="relative -top-[14vh] md:-top-[17vh]  min-h-screen bg-black text-white overflow-hidden">
       <div className="absolute inset-0 bg-gradient-radial from-blue-900/20 via-black to-black" />
 
       <motion.div
@@ -84,7 +84,7 @@ const SwitchToGalaxy = () => {
           pagination={{ clickable: true }}
           navigation={true}
           modules={[EffectCoverflow, Pagination, Navigation]}
-          className="w-full lg:w-[80vw] lg:h-[45vh] mx-auto h-[60vh]"
+          className="w-full lg:w-[80vw]  lg:h-[45vh] mx-auto h-[60vh]"
         >
           {features.map((feature, index) => (
             <SwiperSlide

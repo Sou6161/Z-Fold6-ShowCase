@@ -19,7 +19,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className=" relative bg-gradient-to-b from-gray-900 to-black text-white">
+    <footer className=" relative -top-[14vh]  md:-top-[17vh] bg-gradient-to-b from-gray-900 to-black text-white">
       {/* Pre-Footer Highlights */}
       <div className="border-b border-gray-800">
         <div className="max-w-7xl mx-auto py-12 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

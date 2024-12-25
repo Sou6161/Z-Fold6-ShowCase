@@ -173,7 +173,7 @@ const LiveTranslate = () => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full min-h-screen  2xl:mt-[30vh] 
+      className="relative w-full lg:-mt-[15vh] min-h-screen -ml-5  2xl:mt-[30vh] 
       items-center justify-center p-6 lg:p-12 
       "
     >
@@ -234,7 +234,7 @@ const LiveTranslate = () => {
         <div className="space-y-8 text-white">
           <h1
             ref={titleRef}
-            className="text-5xl 2xl:text-6xl font-righteous lg:text-7xl font-black tracking-tight 
+            className="text-5xl 2xl:text-6xl   font-righteous lg:text-6xl  font-black tracking-tight 
             bg-clip-text text-transparent 
             bg-gradient-to-r from-teal-300 via-emerald-500 to-green-400
             background-animate"
@@ -244,7 +244,7 @@ const LiveTranslate = () => {
 
           <h2
             ref={subtitleRef}
-            className="text-3xl 2xl:text-4xl font-Rajdhani lg:text-5xl font-bold 
+            className="text-3xl 2xl:text-4xl font-Rajdhani lg:text-4xl font-bold 
             bg-gradient-to-r from-teal-400 to-green-600 
             bg-clip-text text-transparent
             drop-shadow-2xl"

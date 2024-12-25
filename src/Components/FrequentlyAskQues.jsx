@@ -226,7 +226,7 @@ const FrequentlyAskQuestions = () => {
   return (
     <div
       ref={containerRef}
-      className="  relative max-w-full mx-auto py-16 px-4 min-h-screen bg-gradient-to-b from-gray-900 to-black"
+      className="  relative -top-[14vh] md:-top-[17vh] max-w-full mx-auto py-16 px-4 min-h-screen bg-gradient-to-b from-gray-900 to-black"
     >
       <motion.div
         initial="hidden"

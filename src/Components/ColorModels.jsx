@@ -63,12 +63,12 @@ const ColorModels = () => {
           className="max-w-4xl mx-auto text-center"
         >
           <h1
-            className="text-6xl font-extrabold font-comfortaa bg-clip-text text-transparent 
+            className="text-6xl md:text-5xl font-extrabold font-comfortaa bg-clip-text text-transparent 
             bg-gradient-to-r from-purple-400 to-pink-600 mb-6"
           >
             Colourful. Confident. Wonderful
           </h1>
-          <p className="text-xl font-Questrial text-gray-200 max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="text-xl md:text-lg font-Questrial text-gray-200 max-w-2xl mx-auto mb-12 leading-relaxed">
             Colours as bold as you. Be confident, and be a true standout with
             one of the special colours — available only here on Samsung.com
           </p>

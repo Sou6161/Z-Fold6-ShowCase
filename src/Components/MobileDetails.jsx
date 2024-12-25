@@ -99,7 +99,7 @@ const MobileDetails = () => {
         </motion.div>
 
         {/* Performance Metrics */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 animate-section">
+        <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-2 lg:grids-cols-2 gap-4 md:gap-8 animate-section">
           {[
             {
               title: "2600 nits",
@@ -171,10 +171,10 @@ const MobileDetails = () => {
         </div>
 
         {/* Gaming Performance */}
-        <div className="flex flex-col  2xl:ml-[25vw] md:flex-row items-center gap-6 md:gap-12 animate-section">
+        <div className="flex flex-col  2xl:ml-[25vw]  md:flex-row items-center gap-6 md:gap-12 animate-section">
           <div className="flex-1 space-y-6 w-full ">
             <AnimatedText>
-              <h2 className="text-3xl  2xl:text-nowrap  font-Russo md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+              <h2 className="text-3xl md:text-nowrap 2xl:text-nowrap  font-Russo md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
                 Powerful Gaming Performance
               </h2>
             </AnimatedText>
@@ -213,7 +213,7 @@ const MobileDetails = () => {
             <img
               src="https://images.samsung.com/in/smartphones/galaxy-z-fold6/images/galaxy-z-fold6-features-snapdragon.jpg?imbypass=true"
               alt="Mobile Device"
-              className="w-[30vw] sm:w-[20vw] 2xl:w-[6vw] 2xl:mx-0 object-cover mx-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
+              className="w-[30vw] sm:w-[20vw] lg:w-[12vw]   xl:w-[10vw] 2xl:w-[6vw] 2xl:mx-0 object-cover mx-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
             />
           </motion.div>
         </div>
@@ -221,7 +221,7 @@ const MobileDetails = () => {
         {/* Battery Section */}
         <div className="text-center space-y-6 animate-section">
           <AnimatedText>
-            <h2 className="text-3xl font-Russo md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
+            <h2 className="text-3xl font-Russo md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
               Game Harder. Game Longer.
             </h2>
           </AnimatedText>

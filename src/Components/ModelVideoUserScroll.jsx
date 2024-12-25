@@ -117,7 +117,7 @@ const ModelVideoUserScroll = () => {
       {/* Video Section */}
       <div
         ref={videoContainerRef}
-        className="sticky top-0 h-screen w-full flex items-center justify-center z-20  sm:px- md:px-8"
+        className="sticky top-0 h-screen w-full flex items-center justify-center z-20  sm:px- md:px-"
       >
         <motion.div
           initial={{ scale: 0.8 }}
@@ -125,7 +125,7 @@ const ModelVideoUserScroll = () => {
             scale: isVideoActive ? 1 : 0.8,
           }}
           transition={{ duration: 1 }}
-          className="relative w-full max-w-full h-full  md:max-w-[80vw] lg:max-w-[70vw] xl:max-w-[60vw] aspect-video overflow-hidden shadow-2xl"
+          className="relative w-full max-w-full h-full  md:max-w-[100vw] lg:max-w-[100vw] xl:max-w-[100vw] aspect-video overflow-hidden shadow-2xl"
         >
           <video
             id="ScrollModel"

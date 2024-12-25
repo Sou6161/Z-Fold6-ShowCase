@@ -171,7 +171,7 @@ const ClickToSearch = () => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full min-h-screen  overflow-hidden
+      className="relative w-full min-h-screen lg:h-[370vh] overflow-hidden
      items-center justify-center p-6 lg:p-12 
       bg-gradient-to-br from-[#1A1A2E] via-[#16213E] to-[#0F3460]"
     >
@@ -181,7 +181,7 @@ const ClickToSearch = () => {
         <div className="space-y-8 text-white">
           <h1
             ref={titleRef}
-            className="text-5xl 2xl:text-6xl font-righteous lg:text-7xl font-black tracking-tight 
+            className="text-5xl 2xl:text-6xl  font-righteous lg:text-6xl font-black tracking-tight 
             bg-clip-text text-transparent 
             bg-gradient-to-r from-cyan-300 via-blue-500 to-indigo-500
             background-animate"
@@ -191,7 +191,7 @@ const ClickToSearch = () => {
 
           <h2
             ref={subtitleRef}
-            className="text-3xl 2xl:text-4xl font-Rajdhani lg:text-5xl font-bold 
+            className="text-3xl 2xl:text-4xl font-Rajdhani lg:text-4xl font-bold 
             bg-gradient-to-r from-blue-400 to-purple-600 
             bg-clip-text text-transparent
             drop-shadow-2xl"

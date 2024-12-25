@@ -93,7 +93,7 @@ const DarkandDarkerVideo = () => {
   };
 
   return (
-    <div ref={containerRef} className="relative  h-screen w-full overflow-hidden bg-black">
+    <div ref={containerRef} className="relative   h-screen w-full overflow-hidden bg-black">
       {/* Video Background */}
       <video
         ref={videoRef}
@@ -101,7 +101,7 @@ const DarkandDarkerVideo = () => {
         autoPlay
         muted
         loop
-        className="absolute top-[40vh]  2xl:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full"
+        className="absolute top-[40vh]   2xl:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full"
         style={{
           width: videoSize.width,
           height: videoSize.height,
@@ -122,7 +122,7 @@ const DarkandDarkerVideo = () => {
               key={word.text}
               animate={textAnimations[index]}
               initial={{ opacity: 0, scale: 0.9, rotateX: 45 }}
-              className="text-3xl 2xl:text-6xl font-extrabold 
+              className="text-3xl md:text-4xl lg:text-6xl lg:-mt-7 l:text-6xl 2xl:text-6xl font-extrabold 
                 bg-gradient-to-r from-purple-600 via-green-500 to-cyan-500
                 bg-clip-text text-transparent
                 drop-shadow-[0_5px_10px_rgba(25,25,255,0.5)]

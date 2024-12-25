@@ -63,13 +63,13 @@ const CameraRealImages = () => {
           <div className="text-white space-y-6">
             <motion.h1
               ref={(el) => (textRefs.current[0] = el)}
-              className="text-5xl  font-chakra lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600"
+              className="text-5xl  font-chakra lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600"
             >
               Extremely detail-oriented
             </motion.h1>
             <motion.p
               ref={(el) => (textRefs.current[1] = el)}
-              className="text-xl font-comfortaa text-gray-300"
+              className="text-xl lg:text-lg font-comfortaa text-gray-300"
             >
               With our high-resolution, 50MP camera, witness every detail come
               to life with stunning clarity and vibrancy.
@@ -94,7 +94,7 @@ const CameraRealImages = () => {
 
         {/* AI Zoom Section */}
         <motion.div
-          className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+          className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 items-center -top-[10vh]"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -103,13 +103,13 @@ const CameraRealImages = () => {
           <div className="text-white space-y-6">
             <motion.h1
               ref={(el) => (textRefs.current[2] = el)}
-              className="text-5xl  font-chakra lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400"
+              className="text-5xl  font-chakra lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400"
             >
               Crystal-clear zoom. Powered by AI
             </motion.h1>
             <motion.p
               ref={(el) => (textRefs.current[3] = el)}
-              className="text-xl font-comfortaa text-gray-300"
+              className="text-xl lg:text-lg font-comfortaa text-gray-300"
             >
               Zoom way, way, way in while keeping noise down and resolution
               clear with ProVisual Engine.25 Its sharp analysis of the zoomed-in
@@ -133,7 +133,7 @@ const CameraRealImages = () => {
 
         {/* Zoom Map Section */}
         <motion.div
-          className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+          className="relative -top-[10vh] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -154,13 +154,13 @@ const CameraRealImages = () => {
           <div className="text-white space-y-6">
             <motion.h1
               ref={(el) => (textRefs.current[4] = el)}
-              className="text-5xl font-chakra lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-400"
+              className="text-5xl  font-chakra lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-400"
             >
               Zoom Map
             </motion.h1>
             <motion.p
               ref={(el) => (textRefs.current[5] = el)}
-              className="text-xl font-comfortaa text-gray-300"
+              className="text-xl lg:text-lg font-comfortaa text-gray-300"
             >
               Use the Zoom Map to get your bearings when you're zoomed in; it'll
               make navigation a breeze
@@ -170,7 +170,7 @@ const CameraRealImages = () => {
 
         {/* Super HDR Section */}
         <motion.div
-          className="relative text-center space-y-12"
+          className="relative -top-[15vh] text-center space-y-12"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -179,13 +179,13 @@ const CameraRealImages = () => {
           <div className="max-w-3xl mx-auto text-white space-y-6">
             <motion.h1
               ref={(el) => (textRefs.current[6] = el)}
-              className="text-5xl font-chakra lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-rose-400"
+              className="text-5xl font-chakra lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-rose-400"
             >
               Brighten things up with Super HDR
             </motion.h1>
             <motion.p
               ref={(el) => (textRefs.current[7] = el)}
-              className="text-xl font-comfortaa text-gray-300"
+              className="text-xl lg:text-lg font-comfortaa text-gray-300"
             >
               See it, believe it. Super HDR puts the right emphasis on details
               to pop and impress, even before you take the picture.
