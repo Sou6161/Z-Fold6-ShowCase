@@ -87,7 +87,7 @@ const ColorModels = () => {
           className="max-w-xl mx-auto relative mb-8"
         >
           <div
-            className="-top-10 relative overflow-hidden rounded-3xl shadow-2xl 
+            className="-top- relative overflow-hidden rounded-3xl shadow-2xl 
             border-4 border-white/10 bg-black/70 backdrop-blur-lg"
           >
             <motion.iframe

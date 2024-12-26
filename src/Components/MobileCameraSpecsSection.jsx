@@ -37,7 +37,7 @@ const MobileCameraSpecsSection = () => {
     {
       mp: "4MP",
       label: "Under Display Camera",
-      position: " left-[57vw] sm:left-[64vw] lg:left-[56vw] lg:top-[10vh] xl:left-[47vw] md:left-[74vw]   2xl:left-[80vh] top-[5vh] sm:top-[7vh] 2xl:top-1/3",
+      position: " left-[57vw] sm:left-[64vw] lg:left-[56vw] lg:top-[10vh] xl:left-[47vw] md:left-[74vw]   2xl:left-[78vh] top-[5vh] sm:top-[7vh] 2xl:top-[25vh]",
       textColor: "text-cyan-400",
       labelColor: "text-purple-500",
     },

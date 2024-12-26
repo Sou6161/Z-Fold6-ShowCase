@@ -99,7 +99,7 @@ const MobileDetails = () => {
         </motion.div>
 
         {/* Performance Metrics */}
-        <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-2 lg:grids-cols-2 gap-4 md:gap-8 animate-section">
+        <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2  2xl:grid-cols-3 gap-4 md:gap-8 animate-section">
           {[
             {
               title: "2600 nits",

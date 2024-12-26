@@ -171,7 +171,7 @@ const ClickToSearch = () => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full min-h-screen lg:h-[370vh] overflow-hidden
+      className="relative w-full min-h-screen lg:h-[370vh] 2xl:h-[340vh] overflow-hidden
      items-center justify-center p-6 lg:p-12 
       bg-gradient-to-br from-[#1A1A2E] via-[#16213E] to-[#0F3460]"
     >

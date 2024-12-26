@@ -80,7 +80,7 @@ const ModelSection = () => {
 
           {/* Phone Image */}
           <motion.div
-            className=" w-[110vw]   sm:w-3/4 md:w-[80vw]  lg:w-[55vw] xl:w-[75vw] mt-8 lg:mt-0 z-10"
+            className=" w-[110vw]   sm:w-3/4 md:w-[80vw]  lg:w-[55vw] xl:w-[75vw] 2xl:h-[67vh]  mt-8 lg:mt-0 z-10"
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -94,7 +94,7 @@ const ModelSection = () => {
             <img
               src={HeroModel}
               alt="Galaxy Z Fold 6"
-              className="w-full  h-[50vh] md:h-[60vh] lg:h-[60vh] xl:h-[75vh] -ml-5 lg:ml-5 xl:ml-14   brightness-110 contrast-125 2xl:w-full 2xl:max-w-2xl mx-auto drop-shadow-2xl"
+              className="w-full  h-[50vh] md:h-[60vh] lg:h-[60vh] xl:h-[75vh]  2xl:h-[80vh] -ml-5 lg:ml-5 xl:ml-14  2xl:ml-[10vw]  brightness-110 contrast-125  2xl:max-w-3xl mx-auto drop-shadow-2xl"
             />
           </motion.div>
         </div>

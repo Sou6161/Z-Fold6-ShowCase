@@ -173,7 +173,7 @@ const LiveTranslate = () => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full lg:-mt-[15vh] min-h-screen -ml-5  2xl:mt-[30vh] 
+      className="relative w-full lg:-mt-[15vh] min-h-screen -ml-5   
       items-center justify-center p-6 lg:p-12 
       "
     >
