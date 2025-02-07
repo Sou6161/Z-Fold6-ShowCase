@@ -94,7 +94,7 @@ const ModelSection = () => {
             <img
               src={HeroModel}
               alt="Galaxy Z Fold 6"
-              className="w-full  h-[50vh] md:h-[60vh] lg:h-[60vh] xl:h-[75vh]  2xl:h-[80vh] -ml-5 lg:ml-5 xl:ml-14  2xl:ml-[10vw]  brightness-110 contrast-125  2xl:max-w-3xl mx-auto drop-shadow-2xl"
+              className="w-full  h-[50vh] md:h-[60vh] lg:h-[60vh] xl:h-[75vh]  2xl:h-[80vh] -ml-5 lg:ml-5 xl:ml-14  2xl:ml-[5vw]  brightness-110 contrast-125  2xl:max-w-4xl mx-auto drop-shadow-2xl"
             />
           </motion.div>
         </div>

@@ -171,7 +171,7 @@ const MobileDetails = () => {
         </div>
 
         {/* Gaming Performance */}
-        <div className="flex flex-col  2xl:ml-[25vw]  md:flex-row items-center gap-6 md:gap-12 animate-section">
+        <div className="flex flex-col  2xl:ml-[30vw]  md:flex-row items-center gap-6 md:gap-12 animate-section">
           <div className="flex-1 space-y-6 w-full ">
             <AnimatedText>
               <h2 className="text-3xl md:text-nowrap 2xl:text-nowrap  font-Russo md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">

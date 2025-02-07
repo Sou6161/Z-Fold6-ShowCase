@@ -90,7 +90,7 @@ const MobileCameraSpecsSection = () => {
                     </h3>
                     <p className={`text-[2vw] lg:text-sm xl:text-nowrap 2xl:text-sm font-arvobold ${spec.labelColor}`}>{spec.label}</p>
                     {spec.subtext && (
-                      <p className="text-[2vw] lg:text-xs  2xl:text-xs font-arvobold text-lime-500">{spec.subtext}</p>
+                      <p className="text-[2vw] lg:text-xs  2xl:text-xs font-arvobold text-amber-400">{spec.subtext}</p>
                     )}
                   </div>
                 </motion.div>
